@@ -6,7 +6,7 @@ This project showcases a deep learning-based solution to identify and classify *
 
 Manual identification of underwater species can be time-consuming and error-prone. This project automates the detection process using computer vision, enabling faster, scalable, and more accurate marine species monitoring.
 
----
+##
 
 ## 📁 Dataset Overview
 
@@ -24,6 +24,9 @@ The dataset is split into:
 YOLO-ready annotations are in `.txt` format with class and bounding box details.
 
 
+##
+
+
 ## 🧠 Model & Training Details
 
 - Model Used: `YOLOv5m` (medium variant for balance between accuracy and speed)
@@ -33,32 +36,63 @@ YOLO-ready annotations are in `.txt` format with class and bounding box details.
 - Batch Size: `16`
 - Training Command:
 
-📈 Evaluation Metrics
+##
 
-Metric	             Score
-Precision	           0.92
-Recall	             0.87
-F1 Score	           0.89
-mAP@0.5	             0.91
-mAP@0.5:0.95	       0.84
-📌 Plots of loss, precision, recall, and mAP progression are available in the runs/train/marine_yolo5m_final/ folder.
+
+### 📈 Evaluation Metrics
+
+| **Metric**       | **Score** |
+|------------------|-----------|
+| **Precision**    | 0.92      |
+| **Recall**       | 0.87      |
+| **F1 Score**     | 0.89      |
+| **mAP@0.5**      | 0.91      |
+| **mAP@0.5:0.95** | 0.84      |
+
+📌 *Training and validation metric plots (loss, precision, recall, mAP) are available in:*  
+`runs/train/marine_yolo5m_final/`
+
+
+
+##
+
 
 🔍 Inference Example
-To detect marine species in new images:
-python detect.py --weights runs/train/marine_yolo5m_final/weights/best.pt --source aquarium_pretrain/test/images --conf 0.25 --save-txt --save-conf --name marine_test
-Detected images and label files will be saved in runs/detect/marine_test.
+To detect marine species in new images, run:
+
+python detect.py --weights runs/train/marine_yolo5m_final/weights/best.pt \
+                 --source aquarium_pretrain/test/images \
+                 --conf 0.25 \
+                 --save-txt \
+                 --save-conf \
+                 --name marine_test
+📁 Predicted images and detection labels will be saved in:
+runs/detect/marine_test/
+
+
+
+##
+
 
 👩‍💻 Author
 **Hritika Gore**
 
 🎓 Engineering student | 💻 Python & AI Enthusiast | 🧠 Passionate about Machine Learning
-📫 GitHub
 
-💡 Future Improvements
+
+##
+
+**💡 Future Improvements**
 Expand to more marine species classes
+
 Integrate real-time detection via webcam or underwater drones
+
 Deploy the model using Streamlit or Flask for user interaction
 
+
+
+
+##
 
 🌊 Empowering ocean conservation with the power of deep learning.
 ```bash
