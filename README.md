@@ -34,6 +34,7 @@ YOLO-ready annotations are in `.txt` format with class and bounding box details.
 - Training Command:
 
 📈 Evaluation Metrics
+
 Metric	             Score
 Precision	           0.92
 Recall	             0.87
@@ -49,6 +50,7 @@ Detected images and label files will be saved in runs/detect/marine_test.
 
 👩‍💻 Author
 **Hritika Gore**
+
 🎓 Engineering student | 💻 Python & AI Enthusiast | 🧠 Passionate about Machine Learning
 📫 GitHub
 
